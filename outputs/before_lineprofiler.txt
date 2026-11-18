@@ -1,0 +1,39 @@
+Timer unit: 1e-09 s
+
+Total time: 2.00935 s
+File: /Users/mayazeaiter/Desktop/EECE 435l/lab9_Maya_Zeaiter/before_optimization/profiler_lineprofiler.py
+Function: slow_function at line 15
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    15                                           def slow_function():
+    16         1 2005073000.0 2.01e+09     99.8      time.sleep(2)
+    17         1       4000.0   4000.0      0.0      total = 0
+    18     10001    1579000.0    157.9      0.1      for i in range(10000):
+    19     10000    2691000.0    269.1      0.1          total += i ** 2
+    20         1          0.0      0.0      0.0      return total
+
+Total time: 4.6e-05 s
+File: /Users/mayazeaiter/Desktop/EECE 435l/lab9_Maya_Zeaiter/before_optimization/profiler_lineprofiler.py
+Function: fast_function at line 23
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    23                                           def fast_function():
+    24         1          0.0      0.0      0.0      total = 0
+    25       101      14000.0    138.6     30.4      for i in range(100):
+    26       100      32000.0    320.0     69.6          total += i ** 2
+    27         1          0.0      0.0      0.0      return total
+
+Total time: 4.21089 s
+File: /Users/mayazeaiter/Desktop/EECE 435l/lab9_Maya_Zeaiter/before_optimization/profiler_lineprofiler.py
+Function: memory_intensive_function at line 30
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    30                                           def memory_intensive_function():
+    31         1       1000.0   1000.0      0.0      total = 0
+    32  10000001 1521970000.0    152.2     36.1      for i in range(10000000):
+    33  10000000 2688917000.0    268.9     63.9          total += i ** 2
+    34         1       1000.0   1000.0      0.0      return total
+

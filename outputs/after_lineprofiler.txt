@@ -1,0 +1,30 @@
+Timer unit: 1e-09 s
+
+Total time: 2.00336 s
+File: /Users/mayazeaiter/Desktop/EECE 435l/lab9_Maya_Zeaiter/after_optimization/profiler_lineprofiler.py
+Function: slow_function at line 19
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    19                                           def slow_function():
+    20         1 2003346000.0    2e+09    100.0      time.sleep(2)
+    21         1      18000.0  18000.0      0.0      return sum_of_squares(10000)
+
+Total time: 4.6e-05 s
+File: /Users/mayazeaiter/Desktop/EECE 435l/lab9_Maya_Zeaiter/after_optimization/profiler_lineprofiler.py
+Function: optimized_fast_function at line 24
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    24                                           def optimized_fast_function():
+    25         1      46000.0  46000.0    100.0      return sum(i**2 for i in range(100))
+
+Total time: 2e-06 s
+File: /Users/mayazeaiter/Desktop/EECE 435l/lab9_Maya_Zeaiter/after_optimization/profiler_lineprofiler.py
+Function: optimized_memory_intensive_function at line 28
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    28                                           def optimized_memory_intensive_function():
+    29         1       2000.0   2000.0    100.0      return sum_of_squares(10000000)
+

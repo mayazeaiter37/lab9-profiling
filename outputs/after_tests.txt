@@ -1,0 +1,9 @@
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 6.229s
+
+OK
+optimized_fast_function executed in 0.00 seconds.
+optimized_memory_intensive_function executed in 0.00 seconds.
+Memory usage before: 56.12 MiB, after: 56.12 MiB.
+slow_function executed in 2.01 seconds.
